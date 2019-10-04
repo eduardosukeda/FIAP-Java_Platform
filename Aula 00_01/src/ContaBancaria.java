@@ -1,8 +1,12 @@
 
 public class ContaBancaria {
 	private String titular;
-	private double saldo;
+	protected double saldo;
 	private int numero;
+	
+	public String getTipo() {
+		return "Conta ";
+	}
 
 	public void deposita(double valor) {
 		this.saldo += valor;
