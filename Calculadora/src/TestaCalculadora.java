@@ -19,15 +19,21 @@ public class TestaCalculadora {
 		sOp2 = JOptionPane.showInputDialog("Digite o segundo numero");
 		op2 = Integer.parseInt(sOp2);
 
-		if (x == 0) {
+		switch (x) {
+		case 0:
 			System.out.println(calc.somar(op1, op2));
-		} else if (x == 1) {
+			break;
+		case 1:
 			System.out.println(calc.subtrair(op1, op2));
-		} else if (x == 2) {
+			break;
+		case 2:
 			System.out.println(calc.multiplicar(op1, op2));
-		} else if (x == 3) {
+			break;
+		case 3:
 			System.out.println(calc.dividir(op1, op2));
+			break;
+		default:
+			break;
 		}
-
 	}
 }
